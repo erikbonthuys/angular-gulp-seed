@@ -3,6 +3,9 @@
  *  The list of variables are listed here bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss
  */
 $navbar-inverse-link-color: #5AADBB;
+$carb-background-color: #F7F7F7;
+$sidenav-background-color: #F7F7F7;
+$brand-primary:         #0098D1;
 $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 
 /**
@@ -26,6 +29,34 @@ $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bo
     width: 50px;
   }
 }
+
+html, body {min-height:100%;margin:0;}
+
+body {
+    background-color:#f4cbc9;
+    background-image: linear-gradient(top, #0098D1, #283A91);
+    background-image: -o-linear-gradient(top,  #0098D1, #283A91);
+    background-image: -moz-linear-gradient(top,  #0098D1, #283A91);
+    background-image: -webkit-linear-gradient(top,  #0098D1, #283A91);
+    background-image: -ms-linear-gradient(top,  #0098D1, #283A91);
+
+}
+
+/* ANIMATIONS
+============================================================================= */
+
+/* entering animations --------------------------------------- */
+/* scale up */
+@keyframes scaleUp {
+    from    { opacity: 0;
+  -webkit-transform:scale3d(0.94, 0.94, 0.94);
+  -moz-transform:scale3d(0.94, 0.94, 0.94);
+  transform:scale3d(0.94, 0.94, 0.94); }
+}
+
+
+.ng-enter           { animation: scaleUp 0.5s both ease-in; z-index: 8888; }
+
 
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
